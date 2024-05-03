@@ -1,0 +1,38 @@
+
+
+
+<div class="container mt-5">
+  <h2 class="table-title">Student Table</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Roll Number</th>
+          <th scope="col">Date Of Birth</th>
+          <th scope="col">Score</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each students}}
+          <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.rollNumber}}</td>
+            <td>{{this.dob}}</td>
+            <td>{{this.score}}</td>
+            <td class="action-btns">
+              <a href="/teacher/editStudent/{{this._id}}" class="btn btn-edit action-btn">
+                <i class="fas fa-edit"></i>
+              </a>
+              <a href="/teacher/deleteStudent/{{this._id}}" class="btn btn-delete action-btn">
+                <i class="fas fa-trash"></i>
+              </a>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
+

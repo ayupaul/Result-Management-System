@@ -1,0 +1,51 @@
+/* Add some spacing around the navbar items */
+.navbar-nav {
+    margin-right: 20px;
+  }
+  
+  /* Style the navbar links */
+  .nav-link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Change link color on hover */
+  .nav-link:hover {
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 5px;
+  }
+  
+  /* Style the active link */
+  .nav-link.active {
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 5px;
+  }
+  
+  /* Style the navbar brand */
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Style the toggle button */
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  
+  /* Center the navbar items */
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  /* Adjust color for the "Home" link */
+  .navbar-nav .nav-link.active[href="/"] {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
